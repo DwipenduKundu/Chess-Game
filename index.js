@@ -27,4 +27,6 @@ for(let row_box=1;row_box<=8;row_box++){
             white.append(pawns)
             black.append(pawns)
         }
+    }
+}
 // ♙
