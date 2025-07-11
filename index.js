@@ -19,14 +19,42 @@ for(let row_box=1;row_box<=8;row_box++){
     }
 }
 
-for(let row_box=1;row_box<=8;row_box++){
-    for(let col_box=0;col_box<4;col_box++){
-        if(row_box===1){
-            const pawns=document.createElement('div')
-            pawns.innerText='♙'
-            white.append(pawns)
-            black.append(pawns)
-        }
+
+const Allwhite=document.querySelectorAll('.white')
+const Allblack=document.querySelectorAll('.black')
+
+
+for(let black_index=8;black_index<16;black_index++){
+    
+    const pawns=document.createElement('div')
+    pawns.innerText='♙'
+
+    pawns.style.backgroundColor='limegreen'
+    pawns.style.border='solid blue'
+
+    if(black_index%2===0){
+        Allwhite[Math.floor(black_index/2)].append(pawns)
+    }
+    else{
+        Allblack[Math.floor(black_index/2)].append(pawns)
     }
 }
+
+
+for(let black_index=48;black_index<56;black_index++){
+    
+    const pawns=document.createElement('div')
+    pawns.innerText='♙'
+
+    pawns.style.backgroundColor='white'
+    pawns.style.border='solid blue'
+
+    if(black_index%2===0){
+        Allwhite[Math.floor(black_index/2)].append(pawns)
+    }
+    else{
+        Allblack[Math.floor(black_index/2)].append(pawns)
+    }
+}
+
 // ♙

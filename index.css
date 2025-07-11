@@ -16,6 +16,9 @@ body{
 .black,.white{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 .white{
     background-color: rgb(255, 255, 255);
