@@ -23,7 +23,7 @@ for(let row_box=1;row_box<=8;row_box++){
 const Allwhite=document.querySelectorAll('.white')
 const Allblack=document.querySelectorAll('.black')
 
-
+//black
 for(let black_index=8;black_index<16;black_index++){
     
     const pawns=document.createElement('div')
@@ -40,7 +40,7 @@ for(let black_index=8;black_index<16;black_index++){
     }
 }
 
-
+//white
 for(let black_index=48;black_index<56;black_index++){
     
     const pawns=document.createElement('div')
