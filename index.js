@@ -26,11 +26,11 @@ const Allblack=document.querySelectorAll('.black')
 //black
 for(let black_index=8;black_index<16;black_index++){
     
-    const pawns=document.createElement('div')
-    pawns.innerText='♙'
-
-    pawns.style.backgroundColor='limegreen'
-    pawns.style.border='solid blue'
+    const pawns=document.createElement('img')
+    pawns.src='./source/Black_Pawn.png'
+    pawns.alt = 'Pawn';
+    pawns.style.width = '40px';
+    pawns.style.height = '40px';
 
     if(black_index%2===0){
         Allwhite[Math.floor(black_index/2)].append(pawns)
@@ -43,11 +43,11 @@ for(let black_index=8;black_index<16;black_index++){
 //white
 for(let black_index=48;black_index<56;black_index++){
     
-    const pawns=document.createElement('div')
-    pawns.innerText='♙'
-
-    pawns.style.backgroundColor='white'
-    pawns.style.border='solid blue'
+    const pawns=document.createElement('img')
+    pawns.src='./source/White_Pawn.png'
+    pawns.alt = 'Pawn';
+    pawns.style.width = '40px';
+    pawns.style.height = '40px';
 
     if(black_index%2===0){
         Allwhite[Math.floor(black_index/2)].append(pawns)
