@@ -56,5 +56,5 @@ for(let black_index=48;black_index<56;black_index++){
         Allblack[Math.floor(black_index/2)].append(pawns)
     }
 }
-
+// picture from source
 // ♙
